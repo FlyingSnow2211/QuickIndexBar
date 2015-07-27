@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#66ff0000"
+        android:dividerHeight="1dip" />
+
+    <com.hxht.testquickindex.mycustomview.QuickIndexBar
+        android:id="@+id/quickindexbar"
+        android:layout_width="30dip"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="#66000000" />
+
+    <TextView
+        android:id="@+id/tv_showletter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="50dip"
+        android:text="A"
+        android:visibility="gone"
+        android:background="@drawable/shape_showletter"
+        android:textSize="45sp" />
+</RelativeLayout>
